@@ -2,7 +2,7 @@ const e = require("express");
 
 const emailIsValid = (email) => {
     if(!email.includes("@")) throw new Error("Invalid Email check @");
-    else if(!/\.com$/i.test(email)) throw new Error("Invalid Email check .com must be at the last");
+    else if(!/\.com$/i.test(email)) throw new Error("Invalid Email check .com must be at the end");
 };
 const phoneIsValid = (phone) => {
   if (!(phone.length >= 10))
